@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>Kelly's webpage</title>
+        <h1>Kelly's icon webpage</h1>
+        <style>
+            .row{
+                width:720px;
+                margin: 10px auto 10px auto;
+            }
+            .image-container {
+                display: table-cell;
+                vertical-align: middle;
+                padding:30px;
+            }
+            body{
+                color: rgb(37, 48, 117);
+            }
+    </style>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/buzz/1.2.1/buzz.min.js"></script>
+</head>
+    
+    <body style="background-color: rgb(200, 207, 255);">
+        
+        <div class="row">
+            <div class="image-container"><img id="donut1" src="Img/cat 1.png" onmouseover="this.src='Img/cat 2.png';" onmouseout="this.src='Img/cat 1.png';" width="200" height="200"/></div>
+            <div class="image-container"><img id="donut2" src="Img/windy 1.png" onmouseover="this.src='Img/windy 2.png';" onmouseout="this.src='Img/windy 1.png';" width="200" height="200"/></div>
+            <div class="image-container"><img id="donut3" src="Img/fireflies 1.png" onmouseover="this.src='Img/fireflies 2.png';" onmouseout="this.src='Img/fireflies 1.png';" width="200" height="200"/></div>
+        </div>
+
+        <div class="row">
+            <div class="image-container"><img id="donut4" src="Img/plane 1.png" onmouseover="this.src='Img/plane 2.png';" onmouseout="this.src='Img/plane 1.png';" width="200" height="200"/></div>
+            <div class="image-container"><img id="donut5" src="Img/coffee 1.png" onmouseover="this.src='Img/coffee 2.png';" onmouseout="this.src='Img/coffee 1.png';" width="200" height="200"/></div>
+            <div class="image-container"><img id="donut6" src="Img/beach 1.png" onmouseover="this.src='Img/beach 2.png';" onmouseout="this.src='Img/beach 1.png';" width="200" height="200"/></div>
+        </div>
+
+        <div class="row">
+            <div class="image-container"><img id="donut7" src="Img/whale 1.png" onmouseover="this.src='Img/whale 2.png';" onmouseout="this.src='Img/whale 1.png';" width="200" height="200"/></div>
+            <div class="image-container"><img id="donut8" src="Img/windchime 2.png" onmouseover="this.src='Img/windchime 1.png';" onmouseout="this.src='Img/windchime 2.png';" width="200" height="200"/></div>
+            <div class="image-container"><img id="donut9" src="Img/bonfire 1.png" onmouseover="this.src='Img/bonfire 2.png';" onmouseout="this.src='Img/bonfire 1.png';" width="200" height="200"/></div>
+        </div>
+
+        <script>
+            var sound1 = new buzz.sound("Sound/cat purring.mp3");
+            var sound2 = new buzz.sound("Sound/windy.mp3");
+            var sound3 = new buzz.sound("Sound/night ambience(fireflies).mp3");
+            var sound4 = new buzz.sound("Sound/brown noise (airplane).mp3");
+            var sound5 = new buzz.sound("Sound/rainy coffee.mp3");
+            var sound6 = new buzz.sound("Sound/beach waves.mp3");
+            var sound7 = new buzz.sound("Sound/whale underwater.mp3");
+            var sound8 = new buzz.sound("Sound/wind chimes.mp3");
+            var sound9 = new buzz.sound("Sound/bonfire + snow.mp3");
+
+            window.onload = function() {
+                document.getElementById('donut1').addEventListener('click', function () {sound1.play();});
+                document.getElementById('donut2').addEventListener('click', function () {sound2.play();});
+                document.getElementById('donut3').addEventListener('click', function () {sound3.play();});
+                document.getElementById('donut4').addEventListener('click', function () {sound4.play();});
+                document.getElementById('donut5').addEventListener('click', function () {sound5.play();});
+                document.getElementById('donut6').addEventListener('click', function () {sound6.play();}); 
+                document.getElementById('donut7').addEventListener('click', function () {sound7.play();});
+                document.getElementById('donut8').addEventListener('click', function () {sound8.play();});
+                document.getElementById('donut9').addEventListener('click', function () {sound9.play();});
+            };
+        </script>
+
+    </body>
+
+</html>
+
+
+
